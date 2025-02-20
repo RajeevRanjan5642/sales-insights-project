@@ -48,7 +48,8 @@ Sales Data is available in the form of SQL database dump.
 
 - In which different currencies transactions have been made?
 
-      SELECT DISTINCT currency FROM transactions;      
+      SELECT DISTINCT currency FROM transactions;
+  
       
       
 
