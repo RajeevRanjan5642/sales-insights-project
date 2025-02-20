@@ -19,3 +19,38 @@ Sales Data is available in the form of SQL database dump.
 
 - Importing data into MySQL Workbench.
 
+![Image](https://github.com/user-attachments/assets/42cb1dc1-b4c1-4240-9519-56d7bbefb828)
+
+- Analyze each table in the sales database.
+
+      USE sales;
+      SELECT * FROM transactions;
+      SELECT * FROM customers;
+      SELECT * FROM date;
+      SELECT * FROM markets;
+      SELECT * FROM products;
+
+- Get the total no. of transactions.
+
+      SELECT COUNT(*) FROM transactions;
+
+- Get the total no. of customers.
+
+      SELECT COUNT(*) FROM customers;
+
+- Get the total no. of products.
+
+      SELECT COUNT(*) FROM products;
+
+- Get the total no. of markets.
+
+      SELECT COUNT(*) FROM markets;
+
+- In which different currencies transactions have been made?
+
+      SELECT DISTINCT currency FROM transactions;      
+      
+      
+
+  
+
