@@ -9,3 +9,13 @@ The Sales Director of AtliQ Hardware faces significant challenges in a dynamical
 To address this issue, the Sales Director needs a simple data visualization tool that can be accessed daily. Such a tool will enable him to visualize sales data clearly, track regional performance, and make informed decisions to drive business growth.
 
 This project aims to develop a sales-related dashboard using Power BI for AtliQ Hardware. By leveraging this technology, the company can make data-driven decisions that will help increase sales and improve overall business performance.
+
+## Project Execution Flow
+![Image](https://github.com/user-attachments/assets/ad59f63a-b6a1-4c34-a657-bb443bb31222)
+
+## Data Analysis using MySQL Workbench
+
+Sales Data is available in the form of SQL database dump.
+
+- Importing data into MySQL Workbench.
+
