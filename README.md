@@ -133,6 +133,27 @@ The sales was highest in 2018 and from then there has been decline in sales perf
       ON transactions.market_code=markets.markets_code
       GROUP BY zone
       ORDER BY total_profit_margin DESC;
+
+## Data Cleaning / ETL (Extract, Transform, Load)
+
+- Connect MySQL database with Power BI Desktop.
+-  After establishing successful connection, we will get a preview of all the tables present in the sales database in our Power BI environment.
+-  Click on the transform option and Power Query editor will open.
+-  Perform all the transformations using Power Query editor.
+   1. markets table : During our analysis we found that the markets table contains some rows with blank zone values. So we filter those rows.
+   2. transactions table : During our analysis we found that the transactions table contains
+      - 0 and -1 values in sales_amount column for some rows which doesn't make sense. So we filter those rows.
+      - two variants of INR and USD i.e. INR and INR#(cr) / USD and USD#(cr). So we decide to replace INR#(cr) with INR and USD#(cr) respectively.
+   Now, since we need the revenue in INR so we need to convert all the sales_amount present in USD into INR. But the exchange rates vary from year to year. So we duplicat the order_date column and extract year from dates and thus create a year column. Now we create a custom column 'norm_sales_amount', using formula, which contains the normalised sales amount.
+
+            if [currency] = "USD" and [year]=2017 then [sales_amount]*64.94
+            else if [currency] = "USD" and [year]=2018 then [sales_amount]*70.64
+            else if [currency] = "USD" and [year]=2019 then [sales_amount]*72.15
+            else if [currency] = "USD" and [year]=2020 then [sales_amount]*74.31
+            else [sales_amount]
+      - some duplicate rows. So we remove them.
+        
+   
       
 
   
