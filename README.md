@@ -144,7 +144,7 @@ The sales was highest in 2018 and from then there has been decline in sales perf
    2. transactions table : During our analysis we found that the transactions table contains
       - 0 and -1 values in sales_amount column for some rows which doesn't make sense. So we filter those rows.
       - two variants of INR and USD i.e. INR and INR#(cr) / USD and USD#(cr). So we decide to replace INR#(cr) with INR and USD#(cr) respectively.
-Now, since we need the revenue in INR so we need to convert all the sales_amount present in USD into INR. But the exchange rates vary from year to year. So we duplicat the order_date column and extract year from dates and thus create a year column. Now we create a custom column 'norm_sales_amount', using formula, which contains the normalised sales amount.
+Now, since we need the revenue in INR so we need to convert all the sales_amount present in USD into INR. But the exchange rates vary from year to year. So we duplicate the order_date column and extract year from dates and thus create a year column which we use during the conversion. Now we create a custom column 'norm_sales_amount', using formula, which contains the normalised sales amount.
 
             if [currency] = "USD" and [year]=2017 then [sales_amount]*64.94
             else if [currency] = "USD" and [year]=2018 then [sales_amount]*70.64
