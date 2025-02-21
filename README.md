@@ -157,6 +157,29 @@ Now, since we need the revenue in INR so we need to convert all the sales_amount
 
 ## Data Modelling
 ![Image](https://github.com/user-attachments/assets/7f5b3fe0-4cc0-44c7-8352-ea0841b3e6ed)
+
+## Data Visualization using Power BI
+
+Base measures :
+- Revenue = SUM('sales transactions'[norm_sales_amount])
+- Revenue Contribution % = DIVIDE([Revenue],CALCULATE([Revenue],ALL('sales products'),ALL('sales customers'),ALL('sales markets')))
+- Sales Qty = SUM('sales transactions'[sales_qty])
+- Profit Margin % = DIVIDE([Total Profit Margin],[Revenue],0)
+- Profit Margin Contribution % = DIVIDE([Total Profit Margin],CALCULATE([Total Profit Margin],ALL('sales products'),ALL('sales customers'),ALL('sales markets')))
+- Total Profit Margin = SUM('Sales transactions'[Profit_Margin])
+
+### Dashboard/Report
+- Sales Insights
+
+![Image](https://github.com/user-attachments/assets/8a7e19ad-d010-458b-a049-685a455f1afa)
+
+- Profit Analysis
+
+![Image](https://github.com/user-attachments/assets/0c029e3a-8d9c-40df-bf4d-63cf40b28d4d)
+
+
+
+
         
    
       
