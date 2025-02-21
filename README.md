@@ -136,7 +136,7 @@ The sales was highest in 2018 and from then there has been decline in sales perf
 
 ## Data Cleaning / ETL (Extract, Transform, Load)
 
-- Connect MySQL database with Power BI Desktop.
+-  Connect MySQL database with Power BI Desktop.
 -  After establishing successful connection, we will get a preview of all the tables present in the sales database in our Power BI environment.
 -  Click on the transform option and Power Query editor will open.
 -  Perform all the transformations using Power Query editor.
@@ -152,6 +152,11 @@ Now, since we need the revenue in INR so we need to convert all the sales_amount
             else if [currency] = "USD" and [year]=2020 then [sales_amount]*74.31
             else [sales_amount]
       - some duplicate rows. So we remove them.
+
+      ![Image](https://github.com/user-attachments/assets/8f315f9e-5d9e-4c74-a88e-fa1ff7151113)
+
+## Data Modelling
+
         
    
       
