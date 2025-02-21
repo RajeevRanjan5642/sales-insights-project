@@ -177,6 +177,19 @@ Base measures :
 
 ![Image](https://github.com/user-attachments/assets/0c029e3a-8d9c-40df-bf4d-63cf40b28d4d)
 
+## Tools and Technologies used :
+
+1. Power BI Desktop
+2. MySQL Workbench
+3. Power Query Editor
+4. SQL
+5. DAX
+
+## References :
+1. https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9&feature=shared
+2. https://www.sqlbi.com/p/introducing-dax-video-course/
+3. https://www.sqlbi.com/p/introduction-to-data-modeling-for-power-bi-video-course/
+
 
 
 
