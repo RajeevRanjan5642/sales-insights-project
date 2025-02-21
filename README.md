@@ -156,7 +156,7 @@ Now, since we need the revenue in INR so we need to convert all the sales_amount
       ![Image](https://github.com/user-attachments/assets/8f315f9e-5d9e-4c74-a88e-fa1ff7151113)
 
 ## Data Modelling
-
+![Image](https://github.com/user-attachments/assets/7f5b3fe0-4cc0-44c7-8352-ea0841b3e6ed)
         
    
       
