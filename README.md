@@ -21,7 +21,7 @@ Sales Data is available in the form of SQL database dump.
 
 ![Image](https://github.com/user-attachments/assets/42cb1dc1-b4c1-4240-9519-56d7bbefb828)
 
-- Analyze each table in the sales database.
+- Explore each table in the sales database.
 
       USE sales;
       SELECT * FROM transactions;
